@@ -1,0 +1,34 @@
+{
+  "angularCompilerOptions": {
+    "entryModule": "app/app.module#AppModule",
+    "genDir": "./ngfactory"
+  },
+  "compilerOptions": {
+    "baseUrl": ".",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "lib": ["dom", "es2016"],
+    "module": "es2015",
+    "moduleResolution": "node",
+    "noEmitHelpers": true,
+    "noImplicitAny": true,
+    "outDir": "lib",
+    "rootDir": ".",
+    "sourceMap": true,
+    "skipLibCheck": true,
+    "target": "es5",
+    "paths": {
+      "@models/*": ["src/products/models/*"],
+      "@components/*": ["src/products/components/*"],
+      "@containers/*": ["src/products/containers/*"],
+      "@services/*": ["src/products/services/*"],
+      "@products/*": ["src/products/*"],
+      "@actions/*": ["src/products/store/actions/*"],
+      "@effects/*": ["src/products/store/effects/*"],
+      "@reducers/*": ["src/products/store/reducers/*"],
+      "@selectors/*": ["src/products/store/selectors/*"],
+      "@guards/*": ["src/products/store/guards/*"]
+    }
+  }
+}
